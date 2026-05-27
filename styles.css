@@ -343,11 +343,11 @@ a {
 
 .hero-kicker {
   font-family: var(--font-sans);
-  font-size: 0.72rem; /* Increased slightly for perfect visual weight */
+  font-size: 0.65rem; /* Reduced to sit perfectly with smaller sub-fonts */
   font-weight: 700;
-  letter-spacing: 0.25em;
+  letter-spacing: 0.26em;
   color: var(--gold-primary);
-  margin-bottom: 1.1rem;
+  margin-bottom: 1rem;
   text-transform: uppercase;
 }
 
@@ -379,7 +379,7 @@ a {
 
 .hero-author-badge h2 {
   font-family: var(--font-serif-header);
-  font-size: 0.8rem; /* Increased slightly for crisp reading */
+  font-size: 0.72rem; /* Reduced for ultra-sleek, premium sub-header style */
   font-weight: 500;
   letter-spacing: 0.14em;
   color: var(--beige);
@@ -387,8 +387,8 @@ a {
 
 .hero-desc {
   font-family: var(--font-serif-body);
-  font-size: 1.0rem; /* Increased slightly for standard body paragraph comfort */
-  line-height: 1.65;
+  font-size: 0.88rem; /* Reduced to look extremely elegant, thin, and compact */
+  line-height: 1.7;
   color: var(--text-muted);
   margin-bottom: 2rem;
   font-weight: 300;
