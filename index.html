@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Embark on a sacred journey of self-discovery and realignment. Premium Tarot Readings, Energy Healing, and Spiritual Coaching by Ishita Kothari. Find clarity, heal, and transform.">
+  <title>Divine Oracle Tarot | Ishita Kothari — Certified Tarot Reader & Healer</title>
+  
+  <!-- Premium Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cinzel:wght@400;500;600;700;800;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons for Mystical Elements -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Background Cosmic Starfield Canvas -->
+  <canvas id="stars-canvas"></canvas>
+
+  <!-- Floating Navigation Bar -->
+  <header id="header" class="site-header">
+    <div class="nav-container">
+      <div class="logo">
+        <a href="#home">
+          <span class="logo-title">DIVINE ORACLE TAROT</span>
+          <span class="logo-subtitle">BY ISHITA KOTHARI</span>
+        </a>
+      </div>
+      
+      <!-- Hamburger Menu for Mobile -->
+      <button class="mobile-nav-toggle" aria-label="Toggle navigation" aria-controls="primary-navigation" aria-expanded="false">
+        <span class="hamburger"></span>
+      </button>
+
+      <nav id="primary-navigation" class="nav-menu">
+        <ul>
+          <li><a href="#home" class="nav-link active">HOME</a></li>
+          <li><a href="#about" class="nav-link">ABOUT</a></li>
+          <li><a href="#services" class="nav-link">SERVICES</a></li>
+          <li><a href="#healing" class="nav-link">HEALING</a></li>
+          <li><a href="#why-choose" class="nav-link">WHY ME</a></li>
+          <li><a href="#testimonials" class="nav-link">REVIEWS</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#services" class="btn btn-gold btn-nav" onclick="openBookingModal('General consultation', 'Video Call')">BOOK A READING</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-section">
+    <div class="hero-container">
+      
+      <!-- Hero Content (Left) -->
+      <div class="hero-content">
+        <span class="hero-kicker">DISCOVER. HEAL. TRANSFORM.</span>
+        <h1 class="hero-title">DIVINE GUIDANCE.<br><span class="gold-text">TIMELESS ANSWERS.</span></h1>
+        
+        <div class="hero-author-badge">
+          <span class="accent-star">✦</span>
+          <h2>TAROT READINGS & HEALING BY ISHITA KOTHARI</h2>
+          <span class="accent-star">✦</span>
+        </div>
+        
+        <p class="hero-desc">
+          Tap into the wisdom of the Universe, dissolve emotional blockages, and step into alignment with the life you are destined to live.
+        </p>
+        
+        <div class="hero-ctas">
+          <button class="btn btn-gold-filled" onclick="openBookingModal('General consultation', 'Voice Call')">
+            BOOK YOUR READING <i class="fab fa-whatsapp"></i>
+          </button>
+          <a href="#services" class="btn btn-outline">EXPLORE SERVICES</a>
+        </div>
+        
+        <div class="hero-trust-strip">
+          <div class="trust-item">
+            <i class="far fa-eye"></i>
+            <span>1000+ Readings</span>
+          </div>
+          <div class="trust-item">
+            <i class="far fa-compass"></i>
+            <span>Trusted Guidance</span>
+          </div>
+          <div class="trust-item">
+            <i class="fas fa-seedling"></i>
+            <span>Life Transformation</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Interactive 3D Hero Visual (Right) -->
+      <div class="hero-visual-viewport">
+        <!-- Nebula Glow Layer -->
+        <div class="nebula-glow"></div>
+        
+        <!-- Rotating Astrological Mandala Wheel -->
+        <div class="mandala-container">
+          <svg class="mandala-wheel mandala-outer" viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="48" fill="none" stroke="url(#goldGrad)" stroke-width="0.3" stroke-dasharray="1 1" />
+            <circle cx="50" cy="50" r="45" fill="none" stroke="url(#goldGrad)" stroke-width="0.5" />
+            <!-- Star Points inside outer circle -->
+            <path d="M50 5 L53 45 L95 50 L53 55 L50 95 L47 55 L5 50 L47 45 Z" fill="none" stroke="url(#goldGrad)" stroke-width="0.25" opacity="0.4" />
+            <path d="M18.2 18.2 L46.5 46.5 L50 5 L53.5 46.5 L81.8 18.2 L53.5 50 L95 50 L53.5 53.5 L81.8 81.8 L50 53.5 L50 95 L46.5 53.5 L18.2 81.8 L46.5 50 L5 50 L46.5 46.5 Z" fill="none" stroke="url(#goldGrad)" stroke-width="0.2" opacity="0.3" />
+            <!-- Zodiac Rings & Glyph Symbols -->
+            <circle cx="50" cy="50" r="38" fill="none" stroke="url(#goldGrad)" stroke-width="0.5" stroke-dasharray="3 2" />
+            <!-- Tick Marks -->
+            <g stroke="url(#goldGrad)" stroke-width="0.3">
+              <line x1="50" y1="5" x2="50" y2="8" />
+              <line x1="50" y1="92" x2="50" y2="95" />
+              <line x1="5" y1="50" x2="8" y2="50" />
+              <line x1="92" y1="50" x2="95" y2="50" />
+              <line x1="18.2" y1="18.2" x2="20.3" y2="20.3" />
+              <line x1="81.8" y1="81.8" x2="79.7" y2="79.7" />
+              <line x1="18.2" y1="81.8" x2="20.3" y2="79.7" />
+              <line x1="81.8" y1="18.2" x2="79.7" y2="20.3" />
+            </g>
+            <defs>
+              <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#ffd97d" />
+                <stop offset="50%" stop-color="#d4af37" />
+                <stop offset="100%" stop-color="#a67c1e" />
+              </linearGradient>
+            </defs>
+          </svg>
+          
+          <svg class="mandala-wheel mandala-inner" viewBox="0 0 100 100">
+            <!-- Inner intricate rings representing chakras & sacred geometry -->
+            <circle cx="50" cy="50" r="32" fill="none" stroke="url(#goldGrad)" stroke-width="0.4" />
+            <circle cx="50" cy="50" r="25" fill="none" stroke="url(#goldGrad)" stroke-width="0.3" stroke-dasharray="0.5 1" />
+            <!-- 12 Petals of Anahata / Astrological houses -->
+            <g fill="none" stroke="url(#goldGrad)" stroke-width="0.25" opacity="0.6">
+              <circle cx="50" cy="34" r="9" />
+              <circle cx="50" cy="66" r="9" />
+              <circle cx="34" cy="50" r="9" />
+              <circle cx="66" cy="50" r="9" />
+              <circle cx="38.7" cy="38.7" r="9" />
+              <circle cx="61.3" cy="61.3" r="9" />
+              <circle cx="38.7" cy="61.3" r="9" />
+              <circle cx="61.3" cy="38.7" r="9" />
+            </g>
+            <circle cx="50" cy="50" r="16" fill="none" stroke="url(#goldGrad)" stroke-width="0.5" />
+            <!-- Center Star -->
+            <polygon points="50,44 52,49 57,49 53,52 55,57 50,54 45,57 47,52 43,49 48,49" fill="url(#goldGrad)" opacity="0.9" />
+          </svg>
+        </div>
+
+        <!-- 3D Interactive Floating Tarot Cards -->
+        <div class="cards-3d-wrapper">
+          
+          <!-- Card 1: The Star -->
+          <div class="tarot-card-3d card-star" data-parallax-factor="0.08">
+            <div class="card-glow"></div>
+            <div class="card-inner">
+              <img src="images/tarot_star.png" alt="The Star Tarot Card" class="card-img">
+            </div>
+          </div>
+          
+          <!-- Card 2: The Moon -->
+          <div class="tarot-card-3d card-moon" data-parallax-factor="-0.08">
+            <div class="card-glow"></div>
+            <div class="card-inner">
+              <img src="images/tarot_moon.png" alt="The Moon Tarot Card" class="card-img">
+            </div>
+          </div>
+          
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Meet Your Guide Section (About) -->
+  <section id="about" class="about-section">
+    <div class="section-container">
+      <div class="about-grid">
+        
+        <!-- Image Container with glowing mandala effect (Left) -->
+        <div class="about-visual">
+          <div class="about-image-wrapper">
+            <div class="about-mandala-bg"></div>
+            <img src="images/ishita_portrait.png" alt="Ishita Kothari - Tarot Reader & Healer" class="about-img">
+          </div>
+        </div>
+        
+        <!-- Copy Content (Right) -->
+        <div class="about-content">
+          <span class="section-kicker">ABOUT ISHITA KOTHARI</span>
+          <h2 class="section-title">A SOUL GUIDED BY PURPOSE.<br><span class="gold-text">A HEART DEVOTED TO HEALING.</span></h2>
+          
+          <p class="about-lead">
+            Welcome to the sacred space of Ishita Kothari.
+          </p>
+          
+          <p class="about-text">
+            I am a certified Tarot Reader, Spiritual Healer, Manifestation Coach, Numerologist, Palmist, Face Reader, and Vastu Specialist. My work is devoted to helping you reconnect with your inner truth, dissolve emotional blockages, and step into alignment with the life you are meant to live.
+          </p>
+          
+          <p class="about-text">
+            Through a blend of intuitive guidance and ancient spiritual sciences, I offer clarity where there is confusion, direction where there is doubt, and healing where there is heaviness. Whether your questions revolve around love, career, finances, or personal growth, each session is designed to empower you with insight and deeper awareness.
+          </p>
+          
+          <blockquote class="about-quote">
+            "This is more than a reading. It is a realignment with your higher self. Let the universe speak."
+          </blockquote>
+          
+          <!-- Subtle Credibility Badges -->
+          <div class="credibility-strip">
+            <div class="credibility-badge">
+              <i class="fas fa-magic"></i>
+              <span>Tarot Reader</span>
+            </div>
+            <div class="credibility-badge">
+              <i class="fas fa-hand-holding-heart"></i>
+              <span>Energy Healer</span>
+            </div>
+            <div class="credibility-badge">
+              <i class="fas fa-bullseye"></i>
+              <span>Manifestation Coach</span>
+            </div>
+            <div class="credibility-badge">
+              <i class="fas fa-dharmachakra"></i>
+              <span>Vastu Specialist</span>
+            </div>
+          </div>
+          
+          <div class="about-actions">
+            <button class="btn btn-gold" onclick="toggleBioModal(true)">KNOW MORE ABOUT ISHITA <i class="fas fa-plus"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bio Expansion Modal -->
+  <div id="bio-modal" class="modal-overlay">
+    <div class="modal-card bio-modal-card glass-panel">
+      <button class="modal-close" onclick="toggleBioModal(false)">&times;</button>
+      <div class="bio-modal-header">
+        <h3 class="gold-text">The Journey of Ishita Kothari</h3>
+        <p class="subtitle">From Divine Intuition to Transformational Guidance</p>
+      </div>
+      <div class="bio-modal-body">
+        <p>For many years, Ishita Kothari has walked the path of the occult and ancient spiritual sciences. What began as an innate intuitive calling evolved into a lifelong commitment to study, practice, and guide others. With extensive certifications and direct training in energy works, tarot mysticism, and Vedic Vastu systems, she bridges ancient esoteric wisdom with highly practical modern alignment coaching.</p>
+        <p>Her approach avoids vague, fatalistic predictions, focusing instead on <strong>empowerment, free will, and conscious energy shifts</strong>. In her reading sessions, she channels messages from spirit guides and uses deep-layered karmic analysis to help clients map out realistic pathways to resolve relationship blocks, manifest professional abundance, and recover from emotional trauma.</p>
+        <p>Thousands of clients worldwide have experienced the clearing of persistent subconscious blockages through her tailored chakra remedies, cord-cutting healing systems, and ritual alignment strategies. Through Divine Oracle Tarot, Ishita continues to offer a compassionate, secure, and entirely non-judgmental gateway to spiritual growth.</p>
+      </div>
+      <div class="bio-modal-footer">
+        <button class="btn btn-gold-filled" onclick="toggleBioModal(false); document.getElementById('services').scrollIntoView({behavior: 'smooth'})">EXPLORE HER SESSIONS</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- How It Works Section -->
+  <section class="how-it-works">
+    <div class="section-container">
+      <span class="section-kicker text-center">THE PATHWAY</span>
+      <h2 class="section-title text-center">YOUR JOURNEY, <span class="gold-text">SIMPLIFIED</span></h2>
+      
+      <div class="steps-grid">
+        <!-- Step 1 -->
+        <div class="step-card glass-panel">
+          <div class="step-badge">1</div>
+          <div class="step-icon-wrap">
+            <i class="fas fa-hand-pointer"></i>
+          </div>
+          <h3>Choose Your Session</h3>
+          <p>Pick the format that aligns with you—reflective voice notes, interactive live voice calls, visual live video reveals, or premium in-person meets.</p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="step-card glass-panel">
+          <div class="step-badge">2</div>
+          <div class="step-icon-wrap">
+            <i class="fas fa-file-signature"></i>
+          </div>
+          <h3>Share Your Details</h3>
+          <p>Provide basic details such as Name, Date of Birth, and your pressing questions so Ishita can tune into your specific energetic aura beforehand.</p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="step-card glass-panel">
+          <div class="step-badge">3</div>
+          <div class="step-icon-wrap">
+            <i class="fas fa-dove"></i>
+          </div>
+          <h3>Receive Guidance</h3>
+          <p>Gain deep clarity, practical remedy plans, and actionable spiritual direction during your high-vibrational, compassionate session.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Overview & Section -->
+  <section id="services" class="services-section">
+    <div class="section-container">
+      <span class="section-kicker text-center">SERVICES</span>
+      <h2 class="section-title text-center">READINGS THAT RESONATE.<br><span class="gold-text">HEALING THAT TRANSFORMS.</span></h2>
+      
+      <p class="services-lead text-center">
+        <strong>Choose Your Path to Clarity</strong><br>
+        Every soul seeks guidance differently. Whether you prefer written insights, live conversations, or immersive in-person experiences, your journey can begin in the way that feels most aligned to you.
+      </p>
+
+      <!-- Category Filter Tabs (Ways to Work) -->
+      <div class="services-tabs">
+        <button class="tab-btn active" onclick="filterServices('all')">All Readings</button>
+        <button class="tab-btn" onclick="filterServices('whispered')">The Whispered Oracle</button>
+        <button class="tab-btn" onclick="filterServices('talk')">The Tarot Talk</button>
+        <button class="tab-btn" onclick="filterServices('vision')">The Divine Vision</button>
+        <button class="tab-btn" onclick="filterServices('live')">Live Oracle (Jaipur)</button>
+      </div>
+
+      <!-- Service Category: The Whispered Oracle (Audio / Voice Notes) -->
+      <div class="services-category-block" data-category="whispered">
+        <div class="category-header-wrap">
+          <div class="cat-icon"><i class="fas fa-microphone-alt"></i></div>
+          <div class="cat-details">
+            <h3>The Whispered Oracle</h3>
+            <p>Audio / Voice Note Readings — Designed for those who seek clarity in a reflective, personal format. Delivered as detailed voice notes you can download and revisit anytime.</p>
+          </div>
+        </div>
+        
+        <div class="pricing-grid">
+          <!-- Card 1 -->
+          <div class="price-card glass-panel">
+            <div class="price-card-header">
+              <h4>Celestial Whisper Reading</h4>
+              <span class="reading-meta">Zodiac-Based Energy Mapping</span>
+            </div>
+            <div class="price-features">
+              <ul>
+                <li><i class="fas fa-check gold-text"></i> 5 specific questions included</li>
+                <li><i class="fas fa-check gold-text"></i> Aligned with your zodiac sun sign</li>
+                <li><i class="fas fa-check gold-text"></i> Requires: Name & DOB only</li>
+                <li><i class="fas fa-info-circle gold-text"></i> Ideal for self-reflection and general life direction</li>
+              </ul>
+            </div>
+            <button class="btn btn-card-booking" onclick="openBookingModal('Celestial Whisper Reading', 'Audio / Voice Note')">BOOK SESSION</button>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="price-card glass-panel popular-card">
+            <div class="popular-tag">RECOMMENDED</div>
+            <div class="price-card-header">
+              <h4>Messages from the Universe</h4>
+              <span class="reading-meta">Personal Energy & Aura Deep-Dive</span>
+            </div>
+            <div class="price-features">
+              <ul>
+                <li><i class="fas fa-check gold-text"></i> 5 specific questions included</li>
+                <li><i class="fas fa-check gold-text"></i> Based on your unique energy aura</li>
+                <li><i class="fas fa-check gold-text"></i> Covers: Love, Career, Finance, Growth</li>
+                <li><i class="fas fa-check gold-text"></i> Requires: Name, DOB, Birthplace & clear photo</li>
+                <li><i class="fas fa-info-circle gold-text"></i> Strictly confidential, no third-party energy</li>
+              </ul>
+            </div>
+            <button class="btn btn-gold-filled w-full" onclick="openBookingModal('Messages from the Universe', 'Audio / Voice Note')">BOOK SESSION</button>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="price-card glass-panel">
+            <div class="price-card-header">
+              <h4>The Soul Connection</h4>
+              <span class="reading-meta">Love & Relational Energy Reading</span>
+            </div>
+            <div class="price-features">
+              <ul>
+                <li><i class="fas fa-check gold-text"></i> 5 questions focusing on compatibility</li>
+                <li><i class="fas fa-check gold-text"></i> Evaluates mutual emotions, intentions & future paths</li>
+                <li><i class="fas fa-check gold-text"></i> Requires: Details & photos of both individuals</li>
+                <li><i class="fas fa-info-circle gold-text"></i> Perfect for couples or single seeking clarity</li>
+              </ul>
+            </div>
+            <button class="btn btn-card-booking" onclick="openBookingModal('The Soul Connection', 'Audio / Voice Note')">BOOK SESSION</button>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="price-card glass-panel">
+            <div class="price-card-header">
+              <h4>Angelic Voice Guidance</h4>
+              <span class="reading-meta">Remedial Spiritual Audio Session</span>
+            </div>
+            <div class="price-features">
+              <ul>
+                <li><i class="fas fa-check gold-text"></i> No fixed question limit</li>
+                <li><i class="fas fa-check gold-text"></i> Direct channelling of protective angel energies</li>
+                <li><i class="fas fa-check gold-text"></i> Includes practical, actionable remedies & shielding</li>
+                <li><i class="fas fa-info-circle gold-text"></i> Best for heavy hearts seeking soothing recovery</li>
+              </ul>
+            </div>
+            <button class="btn btn-card-booking" onclick="openBookingModal('Angelic Voice Guidance', 'Audio / Voice Note')">BOOK SESSION</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service Category: The Tarot Talk (Voice Call Sessions) -->
+      <div class="services-category-block" data-category="talk">
+        <div class="category-header-wrap">
+          <div class="cat-icon"><i class="fas fa-phone-alt"></i></div>
+          <div class="cat-details">
+            <h3>The Tarot Talk</h3>
+            <p>Voice Call Sessions — Real-time interactive consultation. Ideal for deep flowing conversation and exploring follow-up questions dynamically with Ishita.</p>
+          </div>
+        </div>
+
+        <div class="pricing-grid grid-3">
+          <!-- Card 1 -->
+          <div class="price-card glass-panel">
+            <div class="price-card-header">
+              <h4>Mystic Voice Call</h4>
+              <span class="price-badge">15 Minutes Session</span>
+            </div>
+            <div class="price-features">
+              <ul>
+                <li><i class="fas fa-check gold-text"></i> Unlimited questions within time slot</li>
+                <li><i class="fas fa-check gold-text"></i> Real-time intuitive guidance</li>
+                <li><i class="fas fa-check gold-text"></i> Personal & specific person readings allowed</li>
+                <li><i class="fas fa-info-circle gold-text"></i> Ideal for urgent questions on a single topic</li>
+              </ul>
+            </div>
+            <button class="btn btn-card-booking" onclick="openBookingModal('Mystic Voice (15 mins)', 'Voice Call')">BOOK SESSION</button>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="price-card glass-panel popular-card">
+            <div class="popular-tag">MOST POPULAR</div>
+            <div class="price-card-header">
+              <h4>Soulspeak Tarot Call</h4>
+              <span class="price-badge">30 Minutes Session</span>
+            </div>
+            <div class="price-features">
+              <ul>
+                <li><i class="fas fa-check gold-text"></i> Unlimited questions within time slot</li>
+                <li><i class="fas fa-check gold-text"></i> Detailed relational or career mapping</li>
+                <li><i class="fas fa-check gold-text"></i> Includes: Angel guidance & remedies</li>
+                <li><i class="fas fa-info-circle gold-text"></i> Comprehensive lookup with space for questions</li>
+              </ul>
+            </div>
+            <button class="btn btn-gold-filled w-full" onclick="openBookingModal('Soulspeak Tarot (30 mins)', 'Voice Call')">BOOK SESSION</button>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="price-card glass-panel">
+            <div class="price-card-header">
+              <h4>Universal Insight Call</h4>
+              <span class="price-badge">60 Minutes Session</span>
+            </div>
+            <div class="price-features">
+              <ul>
+                <li><i class="fas fa-check gold-text"></i> Unlimited questions within time slot</li>
+                <li><i class="fas fa-check gold-text"></i> Complete multi-faceted life-path blueprint</li>
+                <li><i class="fas fa-check gold-text"></i> Includes: Karmic readings + angel messages</li>
+                <li><i class="fas fa-check gold-text"></i> Tailored spiritual shielding & crystal remedies</li>
+                <li><i class="fas fa-info-circle gold-text"></i> The ultimate immersive call for complete clarity</li>
+              </ul>
+            </div>
+            <button class="btn btn-card-booking" onclick="openBookingModal('Universal Insight (60 mins)', 'Voice Call')">BOOK SESSION</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service Category: The Divine Vision (Video Call) -->
+      <div class="services-category-block" data-category="vision">
+        <div class="category-header-wrap">
+          <div class="cat-icon"><i class="fas fa-video"></i></div>
+          <div class="cat-details">
+            <h3>The Divine Vision</h3>
+            <p>Video Call Sessions — Live Card Reveal. Witness the sacred geometry and tarot layouts unfold in real-time. Ishita interprets the cards face-to-face in a high-energy virtual sanctuary.</p>
+          </div>
+        </div>
+
+        <div class="pricing-grid grid-3">
+          <!-- Card 1 -->
+          <div class="price-card glass-panel">
+            <div class="price-card-header">
+              <h4>Destiny & Decisions Video</h4>
+              <span class="price-badge">15 Minutes Session</span>
+            </div>
+            <div class="price-features">
+              <ul>
+                <li><i class="fas fa-check gold-text"></i> Unlimited questions in time slot</li>
+                <li><i class="fas fa-check gold-text"></i> Visual card spreads revealed live</li>
+                <li><i class="fas fa-check gold-text"></i> Personal + relation energy lookup</li>
+                <li><i class="fas fa-info-circle gold-text"></i> Great for focused visual answers</li>
+              </ul>
+            </div>
+            <button class="btn btn-card-booking" onclick="openBookingModal('Destiny & Decisions (15 mins)', 'Video Call')">BOOK SESSION</button>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="price-card glass-panel popular-card">
+            <div class="popular-tag">LIVE SPREAD</div>
+            <div class="price-card-header">
+              <h4>Full Spectrum Insight Video</h4>
+              <span class="price-badge">30 Minutes Session</span>
+            </div>
+            <div class="price-features">
+              <ul>
+                <li><i class="fas fa-check gold-text"></i> Unlimited questions in time slot</li>
+                <li><i class="fas fa-check gold-text"></i> In-depth multi-deck energy evaluation</li>
+                <li><i class="fas fa-check gold-text"></i> Live channelling of Angelic alignments</li>
+                <li><i class="fas fa-check gold-text"></i> Personal karma correction remedies</li>
+                <li><i class="fas fa-info-circle gold-text"></i> Rich interaction with direct visual connections</li>
+              </ul>
+            </div>
+            <button class="btn btn-gold-filled w-full" onclick="openBookingModal('Full Spectrum Insight (30 mins)', 'Video Call')">BOOK SESSION</button>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="price-card glass-panel">
+            <div class="price-card-header">
+              <h4>Focus & Forecast Video</h4>
+              <span class="price-badge">60 Minutes Session</span>
+            </div>
+            <div class="price-features">
+              <ul>
+                <li><i class="fas fa-check gold-text"></i> Unlimited questions in time slot</li>
+                <li><i class="fas fa-check gold-text"></i> Full past-present-future timelines</li>
+                <li><i class="fas fa-check gold-text"></i> Ancestral guidance and karmic cleanup</li>
+                <li><i class="fas fa-check gold-text"></i> Detailed manifestation block removal coaching</li>
+                <li><i class="fas fa-info-circle gold-text"></i> An elite transformative session for cosmic resets</li>
+              </ul>
+            </div>
+            <button class="btn btn-card-booking" onclick="openBookingModal('Focus & Forecast (60 mins)', 'Video Call')">BOOK SESSION</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service Category: Live Oracle (In-Person Jaipur Exclusive) -->
+      <div class="services-category-block" data-category="live">
+        <div class="category-header-wrap">
+          <div class="cat-icon"><i class="fas fa-gem"></i></div>
+          <div class="cat-details">
+            <h3>Live Oracle</h3>
+            <p>Jaipur Exclusive In-Person Experience — An elite, high-energy physical session conducted in Ishita's private sacred library. Experience the weight of the cards, the aroma of ritual incense, and maximum spiritual resonance.</p>
+          </div>
+        </div>
+
+        <div class="pricing-grid grid-2">
+          <!-- Card 1 -->
+          <div class="price-card glass-panel">
+            <div class="price-card-header">
+              <h4>Speak to Tarot (In-Person)</h4>
+              <span class="price-badge">30 Minutes Premium</span>
+            </div>
+            <div class="price-features">
+              <ul>
+                <li><i class="fas fa-check gold-text"></i> Face-to-face ritual session in Jaipur</li>
+                <li><i class="fas fa-check gold-text"></i> Unlimited questions on all aspects of life</li>
+                <li><i class="fas fa-check gold-text"></i> Physical card selection by client</li>
+                <li><i class="fas fa-check gold-text"></i> Custom protective angel alignment & remedies</li>
+                <li><i class="fas fa-info-circle gold-text"></i> Strictly confidential, by secure appointment</li>
+              </ul>
+            </div>
+            <button class="btn btn-card-booking" onclick="openBookingModal('Speak to Tarot (30 mins)', 'In-Person (Jaipur)')">REQUEST APPOINTMENT</button>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="price-card glass-panel popular-card">
+            <div class="popular-tag">ULTIMATE EXPERIENCE</div>
+            <div class="price-card-header">
+              <h4>Exclusive Oracle Talk</h4>
+              <span class="price-badge">60 Minutes Immersive</span>
+            </div>
+            <div class="price-features">
+              <ul>
+                <li><i class="fas fa-check gold-text"></i> Full hour face-to-face ritual alignment in Jaipur</li>
+                <li><i class="fas fa-check gold-text"></i> Unlimited questions with layered spiritual diagnostics</li>
+                <li><i class="fas fa-check gold-text"></i> Complete Karmic reading + ancestral channelling</li>
+                <li><i class="fas fa-check gold-text"></i> Aura sweep, grounding crystals, and energy remedy bag</li>
+                <li><i class="fas fa-info-circle gold-text"></i> Location and special preparation guidelines shared on booking</li>
+              </ul>
+            </div>
+            <button class="btn btn-gold-filled w-full" onclick="openBookingModal('Exclusive Oracle Talk (60 mins)', 'In-Person (Jaipur)')">REQUEST APPOINTMENT</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Healing & Energy Work Section (High Ticket Positioning) -->
+  <section id="healing" class="healing-section">
+    <div class="section-container">
+      <span class="section-kicker text-center">SACRED WORK</span>
+      <h2 class="section-title text-center">BEYOND READINGS:<br><span class="gold-text">DEEP HEALING & TRANSFORMATION</span></h2>
+      <p class="section-desc text-center">
+        Step into the role of active co-creator of your destiny. Readings diagnose the energy; healing actively restructures it.
+      </p>
+
+      <div class="healing-grid">
+        
+        <!-- Category 1: Energy Healing -->
+        <div class="healing-category-card glass-panel">
+          <div class="healing-cat-header">
+            <div class="h-icon"><i class="fas fa-spa"></i></div>
+            <h3>Energy Healing Sessions</h3>
+          </div>
+          <ul class="healing-list">
+            <li>
+              <strong>Chakra Balancing & Aura Cleansing</strong>
+              <p>Re-calibrates your 7 energetic centers, sweeps away stagnant debris, and restores glowing psychological and physiological harmony.</p>
+            </li>
+            <li>
+              <strong>Cord Cutting Healing</strong>
+              <p>Sever heavy emotional cords and toxic attachments from past lovers or heavy connections, reclaiming your personal energetic sovereignty.</p>
+            </li>
+            <li>
+              <strong>Inner Child Healing</strong>
+              <p>Gently travel to the root of childhood emotional blockages, healing trauma to rebuild profound self-worth, courage, and creative trust.</p>
+            </li>
+            <li>
+              <strong>Protection & Energy Shielding</strong>
+              <p>Erect a highly structured, impenetrable spiritual shield around your energetic field, safeguarding you against external draining currents.</p>
+            </li>
+          </ul>
+          <button class="btn btn-outline w-full mt-auto" onclick="openBookingModal('Energy Healing Session', 'Spiritual Healing')">BEGIN HEALING JOURNEY</button>
+        </div>
+
+        <!-- Category 2: Manifestation Coaching -->
+        <div class="healing-category-card glass-panel highlight-border">
+          <div class="healing-cat-header">
+            <div class="h-icon"><i class="fas fa-bolt"></i></div>
+            <h3>Manifestation & Coaching</h3>
+          </div>
+          <ul class="healing-list">
+            <li>
+              <strong>Manifestation Alignment Session</strong>
+              <p>Diagnose deep-seated ancestral or subconscious lack blockages, aligning your vibrational state using custom rituals to manifest your ultimate goals.</p>
+            </li>
+            <li>
+              <strong>Reality Shift Coaching (1:1)</strong>
+              <p>Intensive, personalized ongoing mentorship. Blends high-vibrational energetic alignment, practical accountability strategies, and spiritual mindsets.</p>
+            </li>
+          </ul>
+          <button class="btn btn-gold-filled w-full mt-auto" onclick="openBookingModal('Reality Shift Coaching', '1:1 Mentorship')">APPLY FOR 1:1 COACHING</button>
+        </div>
+
+        <!-- Category 3: Advanced Occult -->
+        <div class="healing-category-card glass-panel">
+          <div class="healing-cat-header">
+            <div class="h-icon"><i class="fas fa-scroll"></i></div>
+            <h3>Occult & Advanced Services</h3>
+          </div>
+          <ul class="healing-list">
+            <li>
+              <strong>Spell Work & Ritual Guidance</strong>
+              <p>Custom-crafted intentions, candle operations, and planetary alignments. Focuses purely on high-vibrational love, shielding, and professional expansion.</p>
+            </li>
+            <li>
+              <strong>Vastu Consultation</strong>
+              <p>A complete structural energy analysis of your home or corporate office. Merges ancient orientation wisdom with remedies that trigger financial abundance.</p>
+            </li>
+          </ul>
+          <button class="btn btn-outline w-full mt-auto" onclick="openBookingModal('Vastu or Spellwork Consult', 'Advanced Occult')">INQUIRE FOR ADVANCED WORK</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Ishita Section -->
+  <section id="why-choose" class="why-section">
+    <div class="section-container">
+      <span class="section-kicker text-center">WHY CLIENTS TRUST THIS SPACE</span>
+      <h2 class="section-title text-center">A SANCTUARY OF <span class="gold-text">AUTHENTIC ALIGNMENT</span></h2>
+      
+      <div class="why-grid">
+        <div class="why-item glass-panel">
+          <div class="why-icon"><i class="fas fa-star-of-david"></i></div>
+          <h3>Intuitive + Practical Guidance</h3>
+          <p>We avoid vague, fatalistic fortunes. Every session bridges deep spiritual channels with highly actionable, practical steps for daily life.</p>
+        </div>
+
+        <div class="why-item glass-panel">
+          <div class="why-icon"><i class="fas fa-heart"></i></div>
+          <h3>Personalized Approach</h3>
+          <p>No cookie-cutter templates. Your reading is calculated entirely in real-time, aligned dynamically to your personal birth dates and aura state.</p>
+        </div>
+
+        <div class="why-item glass-panel">
+          <div class="why-icon"><i class="fas fa-shield-alt"></i></div>
+          <h3>Safe, Non-Judgmental Space</h3>
+          <p>Your secrets are sacred here. We maintain ironclad client confidentiality and host a compassionate, supportive channel for raw expression.</p>
+        </div>
+
+        <div class="why-item glass-panel">
+          <div class="why-icon"><i class="fas fa-seedling"></i></div>
+          <h3>Empowerment-Focused</h3>
+          <p>We build sovereignty, not spiritual codependency. Our goal is to equip you with energetic clarity so you can command your own future.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="testimonials-section">
+    <div class="section-container">
+      <span class="section-kicker text-center">TESTIMONIALS</span>
+      <h2 class="section-title text-center">TRANSFORMED LIVES. <span class="gold-text">INSPIRED SOULS.</span></h2>
+      
+      <!-- Slider Carousel Container -->
+      <div class="testimonials-carousel-wrapper">
+        <button class="carousel-control prev" aria-label="Previous review"><i class="fas fa-chevron-left"></i></button>
+        
+        <div class="testimonials-slider">
+          <!-- Slide 1 -->
+          <div class="testimonial-slide active">
+            <div class="rating-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text">
+              "Ishita's reading was so incredibly accurate and detailed. She picked up on specific career conflicts I hadn't shared with anyone. The remedies she gave me were simple but highly effective—within three weeks, the heavy blockage cleared and I secured the exact role I wanted. Truly gifted!"
+            </p>
+            <div class="testimonial-author">
+              <span class="author-name">— Ananya S.</span>
+              <span class="author-location">Jaipur</span>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="testimonial-slide">
+            <div class="rating-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text">
+              "The chakra balancing and aura cleansing session was genuinely life-changing. I walked into her sacred space with heavy physical anxiety and left feeling completely weightless, grounded, and clear. Ishita carries such pure, warm energy. She is a spiritual guide in the truest sense!"
+            </p>
+            <div class="testimonial-author">
+              <span class="author-name">— Riya M.</span>
+              <span class="author-location">Mumbai</span>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="testimonial-slide">
+            <div class="rating-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text">
+              "I had a 60-minute Focus & Forecast video session. The way Ishita laid out my cards and explained the karmic cycles left me in awe. It gave me the validation I desperately needed to step away from a toxic connection and align with my manifestation work. Simply sublime!"
+            </p>
+            <div class="testimonial-author">
+              <span class="author-name">— Neha T.</span>
+              <span class="author-location">New Delhi</span>
+            </div>
+          </div>
+        </div>
+        
+        <button class="carousel-control next" aria-label="Next review"><i class="fas fa-chevron-right"></i></button>
+      </div>
+
+      <!-- Carousel Indicators -->
+      <div class="carousel-indicators">
+        <span class="dot active" onclick="jumpToSlide(0)"></span>
+        <span class="dot" onclick="jumpToSlide(1)"></span>
+        <span class="dot" onclick="jumpToSlide(2)"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="faq-section">
+    <div class="section-container">
+      <span class="section-kicker text-center">RESOLVING DOUBTS</span>
+      <h2 class="section-title text-center">FREQUENTLY ASKED <span class="gold-text">QUESTIONS</span></h2>
+      
+      <div class="faq-accordion">
+        
+        <div class="faq-item">
+          <button class="faq-trigger">
+            <span>Are tarot readings completely accurate?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-content">
+            <p>Tarot is a snapshot of the current energies, patterns, and trajectories surrounding you. It reveals the most likely outcome based on your current path. Because you possess absolute free will, you can actively shift your energy, choices, and boundaries to rewrite outcomes—which is why Ishita focuses on practical remedies to steer you toward your desired destiny.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-trigger">
+            <span>What specific details are required from my end?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-content">
+            <p>For standard celestial and zodiac readings, your full Name and Date of Birth are sufficient. For deep energy mapping like 'Messages from the Universe', she also requests your birthplace, exact birth time (if known), and a clear, unfiltered photograph to tune directly into your aura.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-trigger">
+            <span>Can I ask questions regarding a specific person?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-content">
+            <p>Yes, absolutely. For relationship readings like 'The Soul Connection', you can ask about romantic interests, partners, business associates, or family members. Providing their Name, DOB, and photo allows Ishita to cross-analyze how your distinct energetic vibrations interact.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-trigger">
+            <span>Are my sessions and details confidential?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-content">
+            <p>Completely. Divine Oracle Tarot maintains an ironclad ethic of absolute client confidentiality. No details, questions, session recordings, or energy disclosures are ever shared, stored publicly, or distributed. This is an entirely safe, sacred, and non-judgmental container.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-trigger">
+            <span>How will I receive my Whispered Oracle (Audio) reading?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-content">
+            <p>Once you book and share your details, Ishita channels your reading in her sacred space. The reading is recorded as high-quality audio voice notes, loaded with comprehensive card breakdowns and remedy guidelines. These are sent directly to your registered WhatsApp or Email within 3 to 5 business days, allowing you to save and review them whenever you need guidance.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-trigger">
+            <span>Do you offer refunds if I need to cancel my slot?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-content">
+            <p>Due to the time-intensive preparations, spiritual grounding rituals, and limited appointment slots, we do not offer refunds. However, we are happy to reschedule your live call or in-person session to any mutually available date, provided you notify us at least 24 hours in advance.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Final Call-To-Action (Conversion) Section -->
+  <section class="final-cta-section">
+    <div class="section-container">
+      <div class="cta-banner glass-panel">
+        <div class="cta-graphics-left">
+          <img src="images/mystical_crystals.png" alt="Mystical Crystals & Crystal Ball" class="cta-crystal-img">
+        </div>
+        
+        <div class="cta-content-center">
+          <span class="cta-kicker">THE UNIVERSE HAS A MESSAGE FOR YOU</span>
+          <h2>ARE YOU READY TO <span class="gold-text">RECEIVE IT?</span></h2>
+          <p>Your answers are not outside you—they are waiting to be revealed inside this sacred alignment space.</p>
+          <button class="btn btn-gold-filled btn-large" onclick="openBookingModal('General Consultation', 'WhatsApp Redirect')">
+            BOOK YOUR READING ON WHATSAPP <i class="fab fa-whatsapp"></i>
+          </button>
+        </div>
+        
+        <!-- Mystical Sun & Moon Graphic Ring -->
+        <div class="cta-graphics-right">
+          <div class="sun-moon-graphic">
+            <i class="fas fa-sun gold-text"></i>
+            <i class="fas fa-moon gold-text"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="section-container">
+      <div class="footer-grid">
+        
+        <!-- Column 1: Brand Info -->
+        <div class="footer-col footer-brand">
+          <span class="footer-logo">DIVINE ORACLE TAROT</span>
+          <span class="footer-tagline">BY ISHITA KOTHARI</span>
+          <p class="footer-about">
+            Divine guidance. Timeless wisdom. Dedicated to aligning your energies and empowering your life journey through intuitive occult sciences.
+          </p>
+          <div class="footer-socials">
+            <a href="https://instagram.com" target="_blank" aria-label="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/" target="_blank" aria-label="Connect on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="mailto:contact@divineoracletarot.com" aria-label="Email us"><i class="far fa-envelope"></i></a>
+          </div>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="footer-col">
+          <h4>QUICK LINKS</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Ishita</a></li>
+            <li><a href="#services">Tarot Readings</a></li>
+            <li><a href="#healing">Energy Healing</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Useful Links -->
+        <div class="footer-col">
+          <h4>USEFUL INFO</h4>
+          <ul class="footer-links">
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#faq">Frequently Asked Questions</a></li>
+            <li><a href="#home" onclick="openBookingModal('General Support', 'General Query')">Contact Support</a></li>
+            <li><a href="#privacy" onclick="alert('This website uses secure SSL encryption to protect client information. All session details are strictly confidential under the Divine Oracle Code of Conduct.')">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Contact Connect -->
+        <div class="footer-col">
+          <h4>CONNECT DIRECTLY</h4>
+          <ul class="footer-contact">
+            <li><i class="fab fa-whatsapp gold-text"></i> <span>WhatsApp: +91 99999 88888</span></li>
+            <li><i class="fab fa-instagram gold-text"></i> <span>Instagram: @divineoracletarot</span></li>
+            <li><i class="far fa-envelope gold-text"></i> <span>Email: ishita@divineoracle.com</span></li>
+            <li><i class="fas fa-map-marker-alt gold-text"></i> <span>Location: Jaipur, India</span></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Legal Disclaimer (Important for Occult Businesses) -->
+      <div class="footer-disclaimer">
+        <p><strong>Disclaimer:</strong> Tarot readings, spiritual energy works, spell consultation, and manifestation coaching are designed purely for guidance, personal growth, and entertainment purposes. They do not constitute formal professional medical, legal, financial, or psychiatric diagnostics or treatments. You hold absolute agency and accountability for all decisions you make.</p>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Divine Oracle Tarot by Ishita Kothari. All Rights Reserved. Designed for Supreme Spiritual Alignment.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================ -->
+  <!-- HIGH-CONVERTING BOOKING FUNNEL MODAL -->
+  <!-- ============================================ -->
+  <div id="booking-modal" class="modal-overlay">
+    <div class="modal-card booking-modal-card glass-panel">
+      <button class="modal-close" onclick="closeBookingModal()">&times;</button>
+      
+      <div class="booking-modal-header">
+        <div class="modal-title-star"><i class="fas fa-circle-notch fa-spin gold-text"></i></div>
+        <h3>Begin Your Alignment</h3>
+        <p>Input your details below to compile your sacred request.</p>
+      </div>
+
+      <form id="booking-funnel-form" onsubmit="handleFormSubmission(event)">
+        <!-- Pre-populated/hidden details to guide flow -->
+        <div class="form-row-split">
+          <div class="form-group">
+            <label for="modal-service-selected">Selected Service</label>
+            <input type="text" id="modal-service-selected" class="form-input text-gold" readonly>
+          </div>
+          <div class="form-group">
+            <label for="modal-format-selected">Reading Format</label>
+            <input type="text" id="modal-format-selected" class="form-input text-gold" readonly>
+          </div>
+        </div>
+
+        <!-- Step 1: Personal Details -->
+        <div class="form-section-title">1. Your Personal Coordinates</div>
+        <div class="form-row-split">
+          <div class="form-group">
+            <label for="client-name">Your Full Name <span class="text-gold">*</span></label>
+            <input type="text" id="client-name" class="form-input" placeholder="e.g. Aditi Sharma" required>
+          </div>
+          <div class="form-group">
+            <label for="client-dob">Date of Birth <span class="text-gold">*</span></label>
+            <input type="date" id="client-dob" class="form-input" required>
+          </div>
+        </div>
+
+        <div class="form-row-split">
+          <div class="form-group">
+            <label for="client-tob">Birth Time (Optional)</label>
+            <input type="time" id="client-tob" class="form-input">
+          </div>
+          <div class="form-group">
+            <label for="client-pob">Birthplace / City (Required for Aura read)</label>
+            <input type="text" id="client-pob" class="form-input" placeholder="e.g. Jaipur, Rajasthan">
+          </div>
+        </div>
+
+        <!-- Step 2: Third Party details (Conditional/Optional) -->
+        <div class="form-section-title">2. Relational Details (Optional)</div>
+        <div class="form-group">
+          <label for="partner-details">Partner's Name & DOB (If asking about a connection)</label>
+          <input type="text" id="partner-details" class="form-input" placeholder="e.g. Rahul Verma (DOB: 12-Nov-1994)">
+        </div>
+
+        <!-- Step 3: Specific Questions -->
+        <div class="form-section-title">3. Your Intent & Questions</div>
+        <div class="form-group">
+          <label for="client-questions">Describe your current blockages or list your questions <span class="text-gold">*</span></label>
+          <textarea id="client-questions" class="form-input form-textarea" placeholder="Describe what has been feeling heavy, or list your specific questions here..." required></textarea>
+        </div>
+
+        <div class="booking-notice">
+          <i class="fas fa-lock gold-text"></i>
+          <span>All submissions are fully encrypted. Confirming will compile your secure request and open Ishita's booking WhatsApp channel.</span>
+        </div>
+
+        <button type="submit" class="btn btn-gold-filled w-full py-4 text-md">
+          CONFIRM & CONNECT ON WHATSAPP <i class="fab fa-whatsapp"></i>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- JavaScript Modules -->
+  <script src="app.js"></script>
+</body>
+</html>
