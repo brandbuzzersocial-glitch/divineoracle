@@ -343,20 +343,20 @@ a {
 
 .hero-kicker {
   font-family: var(--font-sans);
-  font-size: 0.65rem; /* Reduced by 25% for ultimate delicate layout */
+  font-size: 0.72rem; /* Increased slightly for perfect visual weight */
   font-weight: 700;
-  letter-spacing: 0.26em;
+  letter-spacing: 0.25em;
   color: var(--gold-primary);
-  margin-bottom: 1rem;
+  margin-bottom: 1.1rem;
   text-transform: uppercase;
 }
 
 .hero-title {
-  font-size: 2.1rem; /* Reduced by 25% for elegant, delicate visual weight */
+  font-size: 2.5rem; /* Increased slightly to hit the perfect visual sweet spot */
   line-height: 1.25;
-  font-weight: 300; /* Ultra-thin luxurious Display serif look */
-  margin-bottom: 1.2rem;
-  letter-spacing: 0.1em;
+  font-weight: 300; /* Thin, luxurious Display serif look */
+  margin-bottom: 1.4rem;
+  letter-spacing: 0.09em;
   text-transform: uppercase;
 }
 
@@ -379,7 +379,7 @@ a {
 
 .hero-author-badge h2 {
   font-family: var(--font-serif-header);
-  font-size: 0.75rem; /* Reduced by 25% for tight visual flow */
+  font-size: 0.8rem; /* Increased slightly for crisp reading */
   font-weight: 500;
   letter-spacing: 0.14em;
   color: var(--beige);
@@ -387,10 +387,10 @@ a {
 
 .hero-desc {
   font-family: var(--font-serif-body);
-  font-size: 0.9rem; /* Reduced by 25% for highly compact paragraph balance */
+  font-size: 1.0rem; /* Increased slightly for standard body paragraph comfort */
   line-height: 1.65;
   color: var(--text-muted);
-  margin-bottom: 1.8rem;
+  margin-bottom: 2rem;
   font-weight: 300;
 }
 
@@ -427,7 +427,7 @@ a {
 
 .trust-item span {
   font-family: var(--font-sans);
-  font-size: 0.65rem; /* Reduced by 25% for clean micro labels */
+  font-size: 0.68rem; /* Increased slightly for clear micro label resolution */
   font-weight: 500;
   letter-spacing: 0.08em;
   color: var(--beige);
